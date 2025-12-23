@@ -1,0 +1,373 @@
+/* =========================
+   BASE RESET & VARIABLES
+========================= */
+:root {
+  --bg-page: #f5f7fa;
+  --bg-card: #ffffff;
+
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+
+  --border-color: #e5e7eb;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+
+  --radius: 8px;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* =========================
+   PAGE BASE
+========================= */
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.container {
+  max-width: 640px;
+  margin: 64px auto;
+  background: var(--bg-card);
+  padding: 32px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1,
+h2 {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.container h3 {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   LINKS AS BUTTONS (NO GLOBAL MARGIN ❗)
+========================= */
+a.button {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+a.button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* =========================
+   BUTTON STACK (CONTROL SPACING HERE)
+========================= */
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* =========================
+   FORMS
+========================= */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+form textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* =========================
+   BUTTONS (BASE)
+========================= */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--success);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   WRITER ACTION BUTTONS
+========================= */
+button.accept {
+  background-color: var(--primary);
+}
+
+button.complete {
+  background-color: var(--success);
+}
+
+/* =========================
+   ORDER CARDS
+========================= */
+.order-box {
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  background: #ffffff;
+}
+
+.order-box p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* =========================
+   STATUS BADGES
+========================= */
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.status.OPEN {
+  background-color: var(--warning);
+}
+
+.status.IN-PROGRESS {
+  background-color: var(--primary);
+}
+
+.status.COMPLETED {
+  background-color: var(--success);
+}
+
+/* =========================
+   EMPTY STATES
+========================= */
+.empty-state {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  padding: 24px 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background: #111827;
+  color: white;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar button {
+  width: auto;
+  padding: 6px 12px;
+  background: var(--danger);
+  font-size: 13px;
+}
+
+.navbar a.button {
+  width: auto;
+  padding: 6px 14px;
+}
+
+/* =========================
+   ADMIN BUTTON
+========================= */
+.admin-btn {
+  background-color: #111827;
+}
+
+.admin-btn:hover {
+  background-color: #000000;
+}
+
+/* =========================
+   UTILITIES
+========================= */
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* =========================
+   APPLY WRITER BUTTON
+========================= */
+.apply-writer-btn {
+  margin-top: 16px;
+  display: block;
+  background: linear-gradient(135deg, #fde68a, #fca5a5);
+  color: #1f2937;
+  font-weight: 700;
+  padding: 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.apply-writer-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   ADMIN TABS
+========================= */
+.tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  color: #374151;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  background: #e0e7ff;
+  color: #1d4ed8;
+}
+
+.tab.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* =========================
+   ADMIN EXPORT SECTION
+========================= */
+.export-box {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.export-box h3 {
+  margin-bottom: 12px;
+}
+
+.export-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.export-buttons button {
+  margin: 0;
+}
+
+/* =========================
+   ADMIN ORDER ACTION BUTTONS
+========================= */
+.admin-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.admin-action-buttons button {
+  margin: 0;
+}
+
+/* =========================
+   HOME PAGE BUTTON GROUP
+========================= */
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;          /* 👈 spacing between buttons */
+  margin-bottom: 20px;
+}
+
+/* kill margin so gap controls spacing */
+.home-actions .button {
+  margin: 0;
+}

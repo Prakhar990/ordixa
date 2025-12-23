@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Platform Rules</title>
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    /* Extra layout only for this page */
+    .rules-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .rules-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      margin-left: 18px;
+      margin-bottom: 16px;
+    }
+
+    .card li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: #f1f5f9;
+      padding: 12px;
+      border-left: 4px solid #2563eb;
+      border-radius: 6px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-left">
+      <a href="/" class="button" style="padding:6px 14px;">🏠 Home</a>
+      <b>Platform Rules</b>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <h2>Platform Rules & User Guide</h2>
+
+    <div class="rules-grid">
+
+      <!-- ======================
+           CARD 1: RULES
+      ======================= -->
+      <div class="card">
+        <h3>📜 Platform Rules & Policies</h3>
+
+        <h3>General Rules</h3>
+        <ul>
+          <li>This platform acts as an intermediary between customers and writers.</li>
+          <li>All communication and disputes must go through the admin.</li>
+          <li>Bypassing the platform may result in permanent suspension.</li>
+        </ul>
+
+        <h3>Customer Rules</h3>
+        <ul>
+          <li>Provide accurate and complete task details.</li>
+          <li>Fake, misleading, or spam orders will be rejected.</li>
+          <li>Direct contact with writers is strictly prohibited.</li>
+        </ul>
+
+        <h3>Writer Rules</h3>
+        <ul>
+          <li>Only admin-approved orders can be accepted.</li>
+          <li>Deadlines must be strictly respected.</li>
+          <li>Direct contact with customers is not allowed.</li>
+        </ul>
+
+        <h3>Admin Authority</h3>
+        <ul>
+          <li>Admin decisions are final and binding.</li>
+          <li>All sensitive actions are logged for transparency.</li>
+        </ul>
+
+        <h3>Disclaimer</h3>
+        <p>
+          The platform does not guarantee academic outcomes. By using this
+          platform, you agree to follow all rules stated above.
+        </p>
+      </div>
+
+      <!-- ======================
+           CARD 2: GUIDE
+      ======================= -->
+      <div class="card">
+        <h3>🧭 How to Use This Platform</h3>
+
+        <h3>👤 Customer Workflow</h3>
+        <ul>
+          <li>Click <b>Place Assignment Order</b> on the home page.</li>
+          <li>Fill in accurate task details (subject, pages, deadline, description).</li>
+          <li>Submit the order — status will be <b>PENDING_APPROVAL</b>.</li>
+        </ul>
+
+        <div class="highlight">
+          After placing an order, you must contact the admin for payment
+          verification. Orders are approved only after payment confirmation.
+        </div>
+
+        <h3>💳 Payment Process</h3>
+        <ul>
+          <li>After order submission, contact the admin via WhatsApp.</li>
+          <li>Send your <b>Order ID</b> while contacting admin.</li>
+          <li>Admin will share payment details / QR code.</li>
+          <li>Send payment proof to admin.</li>
+          <li>Admin manually verifies and approves the order.</li>
+        </ul>
+
+        <h3>✍️ Writer Workflow</h3>
+        <ul>
+          <li>Login via <b>Writer Dashboard</b>.</li>
+          <li>Only <b>admin-approved</b> orders are visible.</li>
+          <li>Accept an order and complete it before the deadline.</li>
+          <li>Mark the task as completed once finished.</li>
+        </ul>
+
+        <h3>📊 Order Tracking</h3>
+        <ul>
+          <li>Customers can track order status after login.</li>
+          <li>Status updates include approval, acceptance, and completion time.</li>
+        </ul>
+
+        <div class="highlight">
+          ⚠️ Direct communication between customers and writers is not allowed.
+          The admin acts as the sole mediator to ensure safety and transparency.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Audit Logs</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="nav-left">
+      <a href="/admin" class="button" style="padding:6px 14px;">⬅ Back</a>
+      <b>System Audit Trail</b>
+    </div>
+    <div class="nav-right">
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>System Audit Trail</h2>
+
+    <p class="text-center" style="color:#6b7280; margin-bottom:20px;">
+      This log records all sensitive administrative actions.
+    </p>
+
+    <!-- 🔥 THIS ID IS CRITICAL -->
+    <div id="logs"></div>
+  </div>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

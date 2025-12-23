@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Customer Login</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Customer Login</h2>
+
+    <p class="text-center" style="color:#6b7280; margin-bottom:20px;">
+      Login using the phone number and PIN you used while placing the order.
+    </p>
+
+    <form id="customerLoginForm">
+  <label>Phone Number</label>
+  <input id="phone" required>
+
+  <label>PIN</label>
+  <input id="pin" type="password" required>
+
+  <button type="submit">Login</button>
+</form>
+
+
+    <p id="msg" class="text-center mt-20"></p>
+  </div>
+
+  <script src="/customer_login.js"></script>
+</body>
+</html>

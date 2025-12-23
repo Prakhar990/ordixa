@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Writer Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-left">
+      <a href="/" class="button" style="padding:6px 14px;">🏠 Home</a>
+      <b>Writer Dashboard</b>
+    </div>
+    <div class="nav-right">
+      <span id="username"></span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <h2>Available Orders</h2>
+    <div id="orders-open"></div>
+
+    <h2 style="margin-top:32px;">In Progress</h2>
+    <div id="orders-progress"></div>
+
+    <h2 style="margin-top:32px;">Completed</h2>
+    <div id="orders-completed"></div>
+
+  </div>
+
+  
+
+
+  <div class="container mt-20">
+  <h3>Need Help?</h3>
+
+  <p style="color:#6b7280; margin-bottom:10px;">
+    For any issues, disputes, or clarifications, contact the admin directly.
+  </p>
+
+  <p><b>📞 Phone:</b> +91-8923334794</p>
+  <p><b>💬 WhatsApp:</b> +91-8923334794</p>
+  <p><b>📧 Email:</b> yednaprahkarp@gmail.com</p>
+
+  <p style="font-size:13px; color:#6b7280; margin-top:10px;">
+    Admin acts as a mediator between customers and writers.
+  </p>
+</div>
+
+<p class="text-center mt-20">
+  <a href="/rules">📜 Read Platform Rules</a>
+</p>
+
+
+
+  <script src="/writer.js"></script>
+</body>
+</html>

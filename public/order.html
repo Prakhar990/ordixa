@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Place Assignment Order</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="navbar">
+  <a href="/" class="button" style="padding:6px 14px;">🏠 Home</a>
+  </div>
+
+
+  <div class="container">
+    <h2>Place Assignment Order</h2>
+
+    <p class="text-center" style="color:#6b7280; margin-bottom:24px;">
+      Fill in accurate details. Orders are verified by admin before writers can accept.
+    </p>
+
+    <form id="orderForm">
+
+      <!-- CUSTOMER DETAILS -->
+      <label>Customer Name</label>
+      <input name="customerName" placeholder="Your full name" required>
+
+      <label>Phone Number</label>
+      <input name="customerPhone" placeholder="10-digit mobile number" required>
+
+      <hr style="margin:20px 0; border:none; border-top:1px solid #e5e7eb;">
+
+      <!-- TASK DETAILS -->
+      <label>Task Type</label>
+      <select name="taskType" required>
+        <option value="">Select task type</option>
+        <option value="Assignment Writing">Assignment Writing</option>
+        <option value="Sheet Making">Sheet Making</option>
+        <option value="Project Work">Project Work</option>
+        <option value="Notes Preparation">Notes Preparation</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Subject</label>
+      <input name="subject" placeholder="e.g. Data Structures" required>
+
+      <label>Number of Pages</label>
+      <input name="pages" placeholder="e.g. 5" required>
+
+      <label>Deadline</label>
+      <input name="deadline" placeholder="e.g. 25 Dec 2025" required>
+
+      <label>Additional Description</label>
+      <textarea name="description" placeholder="Any special instructions, format, handwritten/typed, etc."></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+
+    <div id="message" class="text-center mt-20"></div>
+  </div>
+
+  <script src="/order.js"></script>
+</body>
+</html>

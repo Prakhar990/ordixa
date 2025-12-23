@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="nav-left">
+      <a href="/" class="button" style="padding:6px 14px;">🏠 Home</a>
+      <b>Admin Dashboard</b>
+    </div>
+    <div class="nav-right">
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <h2>Admin Control Panel</h2>
+
+    <p class="text-center" style="color:#6b7280; margin-bottom:20px;">
+      Review, approve, manage orders and export platform data
+    </p>
+
+    <!-- EXPORT SECTION -->
+    <div class="export-box">
+      <h3>📤 Export Data</h3>
+
+      <div class="export-buttons">
+        <button type="button" onclick="exportData('orders')">📦 Export Orders</button>
+        <button type="button" onclick="exportData('customers')">👥 Export Customers</button>
+        <button type="button" onclick="exportData('writers')">✍️ Export Writers</button>
+        <button type="button" onclick="exportData('full')">🗄 Full Backup</button>
+      </div>
+    </div>
+
+    <!-- AUDIT LOGS -->
+    <div class="text-center mt-20">
+      <a href="/admin/audit" class="button admin-btn">📊 View Audit Logs</a>
+    </div>
+
+    <!-- ORDER STATUS TABS -->
+    <div class="tabs mt-20">
+      <button class="tab active" onclick="switchTab('PENDING_APPROVAL', this)">
+        Pending Approval
+      </button>
+      <button class="tab" onclick="switchTab('OPEN', this)">
+        Open
+      </button>
+      <button class="tab" onclick="switchTab('IN_PROGRESS', this)">
+        In Progress
+      </button>
+      <button class="tab" onclick="switchTab('COMPLETED', this)">
+        Completed
+      </button>
+      <button class="tab" onclick="switchTab('CANCELLED', this)">
+        Cancelled / Rejected
+      </button>
+    </div>
+
+    <!-- ORDERS LIST -->
+    <div id="orders" class="mt-20"></div>
+
+  </div>
+
+  <script src="/admin.js"></script>
+</body>
+</html>
