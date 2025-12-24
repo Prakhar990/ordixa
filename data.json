@@ -1,89 +1,16 @@
 {
   "admin": {
     "username": "admin",
-    "password": "admin123"
+    "password": "@dmin2709"
   },
-  "customers": {
-    "9153365180": {
-      "name": "Aryan",
-      "pin": "7970",
-      "createdAt": "2025-12-23T10:59:47.536Z"
-    }
-  },
+  "customers": {},
   "writers": {
     "prakhar": {
-      "password": "4321",
+      "password": "7581",
       "earnings": 0,
       "completedOrders": []
     }
   },
-  "orders": {
-    "1766487587536": {
-      "taskType": "Assignment Writing",
-      "subject": "ECE",
-      "pages": "10",
-      "deadline": "12/12/25",
-      "description": "NULL",
-      "status": "COMPLETED",
-      "writer": "prakhar",
-      "customer": {
-        "name": "Aryan",
-        "phone": "9153365180"
-      },
-      "timeline": {
-        "placedAt": "2025-12-23T10:59:47.536Z",
-        "approvedAt": "2025-12-23T11:02:00.666Z",
-        "acceptedAt": "2025-12-23T11:02:33.127Z",
-        "completedAt": "2025-12-23T11:02:38.318Z"
-      }
-    },
-    "1766487666513": {
-      "taskType": "Assignment Writing",
-      "subject": "ECE",
-      "pages": "10",
-      "deadline": "12/12/26",
-      "description": "",
-      "status": "IN_PROGRESS",
-      "writer": "prakhar",
-      "customer": {
-        "name": "Aryan",
-        "phone": "9153365180"
-      },
-      "timeline": {
-        "placedAt": "2025-12-23T11:01:06.514Z",
-        "approvedAt": "2025-12-23T11:02:02.545Z",
-        "acceptedAt": "2025-12-23T11:02:37.038Z"
-      }
-    },
-    "1766488394990": {
-      "taskType": "Project Work",
-      "subject": "AHT",
-      "pages": "12",
-      "deadline": "23/23/23",
-      "description": "",
-      "status": "PENDING_APPROVAL",
-      "writer": "",
-      "customer": {
-        "name": "Aryan",
-        "phone": "9153365180"
-      },
-      "timeline": {
-        "placedAt": "2025-12-23T11:13:14.990Z"
-      }
-    }
-  },
-  "auditLogs": [
-    {
-      "time": "2025-12-23T11:02:00.667Z",
-      "admin": "admin",
-      "action": "APPROVE_ORDER",
-      "orderId": "1766487587536"
-    },
-    {
-      "time": "2025-12-23T11:02:02.546Z",
-      "admin": "admin",
-      "action": "APPROVE_ORDER",
-      "orderId": "1766487666513"
-    }
-  ]
+  "orders": {},
+  "auditLogs": []
 }
